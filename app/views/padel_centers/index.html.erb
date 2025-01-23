@@ -1,0 +1,7 @@
+<h1>Voici les Centres de Padel à proximité</h1>
+
+<% @padel_centers.each do |padel_center|  %>
+  <%= padel_center.photo %>
+  <%= padel_center.name %>
+  <%= padel_center.address %>
+<% end %>
