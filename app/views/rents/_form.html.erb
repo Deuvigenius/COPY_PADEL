@@ -1,0 +1,9 @@
+<%= simple_form_for @rent, url: rents_path do |f| %>
+  <div class="form-group">
+    <%= f.label :date, "Date de réservation" %>
+    <%= f.input :date, as: :string %>
+  </div>
+  <div class="form-actions">
+    <%= f.submit "Réserver", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<%= simple_form_for [@padel_center, @padel_court, @rent], url: padel_center_padel_court_rents_path(@padel_center, @padel_court) do |f| %>
+  <div class="form-group">
+    <%= f.label :date, "Date de réservation" %>
+    <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" } } %>
+  </div>
+  <div class="form-actions">
+    <%= f.submit "Réserver", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -32,23 +32,23 @@ padelcenter3 = PadelCenter.all[2].photo.attach(io: file3, filename: "padelcenter
 
 PadelCourt.create!(number: "1", content: "Bien exposé au soleil", padel_center: PadelCenter.first)
 file4 = URI.parse("https://images.unsplash.com/photo-1709587823553-765b325cc31b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBhZGVsfGVufDB8fDB8fHww").open
-padelcourt1 =  PadelCourt.all[3].photo.attach(io: file4, filename: "padelcourt-1", content_type: "image/png")
+padelcourt1 =  PadelCourt.all[0].photo.attach(io: file4, filename: "padelcourt-1", content_type: "image/png")
 
 PadelCourt.create!(number: "2", content: "Bien exposé au soleil", padel_center: PadelCenter.first)
 file5 = URI.parse("https://plus.unsplash.com/premium_photo-1708692919464-b5608dd10542?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFkZWx8ZW58MHx8MHx8fDA%3D").open
-padelcourt2 =  PadelCourt.all[4].photo.attach(io: file5, filename: "padelcourt-2", content_type: "image/png")
+padelcourt2 =  PadelCourt.all[1].photo.attach(io: file5, filename: "padelcourt-2", content_type: "image/png")
 
 PadelCourt.create!(number: "1", content: "Glissant l'hiver", padel_center: PadelCenter.second)
 file6 = URI.parse("https://images.unsplash.com/photo-1689942963385-f5bd03f3b270?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhZGVsfGVufDB8fDB8fHww").open
-padelcourt3 =  PadelCourt.all[5].photo.attach(io: file6, filename: "padelcourt-3", content_type: "image/png")
+padelcourt3 =  PadelCourt.all[2].photo.attach(io: file6, filename: "padelcourt-3", content_type: "image/png")
 
 PadelCourt.create!(number: "2", content: "Attention au vent", padel_center: PadelCenter.second)
 file7 = URI.parse("https://images.unsplash.com/photo-1709587824751-dd30420f5cf3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBhZGVsfGVufDB8fDB8fHww").open
-padelcourt4 =  PadelCourt.all[6].photo.attach(io: file7, filename: "padelcourt-4", content_type: "image/png")
+padelcourt4 =  PadelCourt.all[3].photo.attach(io: file7, filename: "padelcourt-4", content_type: "image/png")
 
 PadelCourt.create!(number: "1", content: "Terrain rapide, Pour les meilleurs, en es-tu ?", padel_center: PadelCenter.last)
 file8 = URI.parse("https://images.unsplash.com/photo-1709587825135-80b00570c355?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBhZGVsfGVufDB8fDB8fHww").open
-padelcourt5 =  PadelCourt.all[7].photo.attach(io: file8, filename: "padelcourt-1", content_type: "image/png")
+padelcourt5 =  PadelCourt.all[4].photo.attach(io: file8, filename: "padelcourt-1", content_type: "image/png")
 
 puts "#{PadelCenter.count} PadelCenters are created"
 puts "#{PadelCourt.count} PadelCourts are created"

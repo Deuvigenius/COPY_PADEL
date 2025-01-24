@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_01_23_132357) do
+ActiveRecord::Schema[7.2].define(version: 2025_01_24_151742) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -60,6 +60,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_23_132357) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.index ["user_id"], name: "index_padel_centers_on_user_id"
   end
 
@@ -69,6 +70,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_23_132357) do
     t.bigint "padel_center_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.index ["padel_center_id"], name: "index_padel_courts_on_padel_center_id"
   end
 
@@ -77,6 +79,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_23_132357) do
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "date"
     t.index ["padel_court_id"], name: "index_rents_on_padel_court_id"
     t.index ["user_id"], name: "index_rents_on_user_id"
   end

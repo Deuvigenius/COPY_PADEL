@@ -1,5 +1,6 @@
 class PadelCourtsController < ApplicationController
   def index
+    @padel_courts = PadelCourt.all
   end
 
   def new

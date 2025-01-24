@@ -9,6 +9,8 @@ class PadelCentersController < ApplicationController
 
   def show
     @padel_center = PadelCenter.find(params[:id])
+    @padel_courts = PadelCourt.find(params[:id])
+    @rent = Rent.new
   end
 
   def create
@@ -21,5 +23,5 @@ class PadelCentersController < ApplicationController
   end
 
   private
-  
+
 end
